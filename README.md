@@ -71,9 +71,6 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=M1Vj&show_icons=true&theme=dark&hide_rank=true&include_all_commits=true" alt="All-time commit count" />
 </p>
-<p align="center">
-  <img src="https://ghchart.rshah.org/M1Vj" alt="GitHub Contribution Chart" />
-</p>
 
 
 ---
