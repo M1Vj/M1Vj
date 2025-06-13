@@ -71,6 +71,13 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=M1Vj&show_icons=true&theme=dark&hide_rank=true&include_all_commits=true" alt="All-time commit count" />
 </p>
+<p align="center">
+  <img 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=M1Vj&layout=compact&theme=dark" 
+    alt="Top Languages" 
+  />
+</p>
+
 
 
 ---
