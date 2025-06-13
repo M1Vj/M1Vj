@@ -3,7 +3,7 @@
 -->
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7abzM7qwvXyjrEBq/giphy.gif" alt="Wave" width="120" />
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3U0Nm5vM2d6MmR0bTc4aHE0dDV2dmpndXU3bHcxbWtkdzl2bHcxOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S2IfEQqgWc0AH4r6Al/giphy.gif" alt="Wave" width="120" />
 </p>
 
 <h1 align="center">👋 Hi, I'm VJ F. Mabansag</h1>
