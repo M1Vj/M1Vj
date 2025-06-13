@@ -69,8 +69,16 @@
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=M1Vj&show_icons=true&theme=dark&hide_rank=true" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api
+          ?username=M1Vj
+          &show_icons=true
+          &theme=dark
+          &hide_rank=true
+          &include_all_commits=true" 
+    alt="GitHub all-time commits" />
 </p>
+
 
 ---
 
