@@ -10,7 +10,7 @@
 <p align="center">
   <a href="mailto:mabansagbj@gmail.com"><img src="https://img.shields.io/badge/Email-mabansagbj%40gmail.com-blue?style=flat-square&logo=gmail"/></a>
   <a href="tel:+639606614535"><img src="https://img.shields.io/badge/Call-+63--960--661--4535-green?style=flat-square&logo=phone"/></a>
-  <a href="https://eon-taupe.vercel.app/vmabansag"><img src="https://img.shields.io/badge/Portfolio-Website-orange?style=flat-square&logo=vercel"/></a>
+  <a href="https://vj.maba-studio.fun"><img src="https://img.shields.io/badge/Portfolio-Website-orange?style=flat-square&logo=vercel"/></a>
   <img src="https://komarev.com/ghpvc/?username=M1Vj&style=flat-square" alt="Profile views"/>
 </p>
 
