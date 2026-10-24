@@ -1,71 +1,47 @@
-<h1 align="center">VJ F. Mabansag</h1>
+# Vj Mabansag
 
-<p align="center">
-  <a href="mailto:mabansagbj@gmail.com"><img src="https://img.shields.io/badge/Email-mabansagbj%40gmail.com-blue?style=flat-square&logo=gmail" alt="Email" /></a>
-  <a href="https://github.com/M1Vj"><img src="https://img.shields.io/badge/GitHub-M1Vj-black?style=flat-square&logo=github" alt="GitHub" /></a>
-  <a href="https://linkedin.com/in/m1vj"><img src="https://img.shields.io/badge/LinkedIn-m1vj-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" /></a>
-  <img src="https://komarev.com/ghpvc/?username=M1Vj&style=flat-square" alt="Profile views" />
-</p>
+**Applied AI & Full-Stack Developer · BS Computer Science, Visayas State University**
 
-Third-year BS Computer Science student at Visayas State University. I build full-stack web systems with Next.js, TypeScript, Supabase/PostgreSQL, Firebase, and Python, with focus on production apps, role-based access, RLS-backed databases, mobile-first PWAs, AI integrations, and release workflows.
+I build AI-assisted applications and the software around them, using Python and TypeScript. My interests span LLM applications, AI agents, embeddings and transformers, with undergraduate research focused on NLP evaluation.
 
-## Current Focus
+[LinkedIn](https://www.linkedin.com/in/m1vj/) · [VSU SmartMap](https://vsumap.vercel.app)
 
-- Building production-ready campus and education systems.
-- Working on a thesis proposal for AI-generated text detection using content/function word embeddings and persistent homology.
-- Using AI-assisted development workflows for planning, implementation, testing, and technical documentation.
-- Practicing cybersecurity through CTFs, focused on Linux, cryptography, and digital forensics.
+## Selected projects
 
-## Highlight Projects
+### [HydraLab](https://github.com/M1Vj/HydraLab)
 
-### [VSU SmartMap](https://vsumap.vercel.app) - Solo Full Stack Developer
+A local-first research workbench connecting document ingestion, source-grounded retrieval, citations, notes and research-agent workflows. I built extractive retrieval with source locators, MCP tool support, human approval checkpoints and traceable agent runs.
 
-Mobile-first production PWA for Visayas State University campus navigation.
+**Python · FastAPI · React · TypeScript · SQLite · Tauri**
 
-- Reached 2,000+ students in its first month based on Vercel Analytics.
-- Maintained 19 merged PRs across the web app and Android Trusted Web Activity wrapper.
-- Built interactive campus map, searchable facility directory, admin CRUD, user suggestions, offline caching, and AI location chat.
+### [VSU SmartMap](https://vsumap.vercel.app)
 
-**Stack:** Next.js, TypeScript, Supabase, Leaflet, Gemini, PWA, Android TWA
+A campus navigation PWA that began as a Software Engineering group project and that I now maintain solo. It combines an interactive map and searchable campus directory with Gemini-powered location chat, offline caching and reviewed user suggestions.
 
-### [Centipede](https://github.com/M1Vj/centipede) - Full Stack Developer
+**Next.js · TypeScript · Supabase · Leaflet · Dexie · Gemini/Genkit**
 
-Production math competition platform for organizers, coaches, and mathletes.
+### [MathWiz Arena — centipede](https://github.com/M1Vj/centipede)
 
-- Authored 30 merged PRs across 11 documented internal releases.
-- Built and maintained role-based auth, problem banks, team mode, automated scoring, disputes, leaderboard history, and exports.
-- Worked on anti-cheat logging, notifications, participant monitoring, audit-backed controls, and Supabase RLS contracts.
+Lead developer on a collaborative math competition platform for mathletes, coaches and organizers. My work covers problem banks, team competitions, scoring, answer review, disputes, leaderboards and exports, with role-based access and row-level security.
 
-**Stack:** Next.js, TypeScript, Supabase/PostgreSQL, PLpgSQL, Tailwind CSS
+**Next.js · TypeScript · Supabase/PostgreSQL · Tailwind CSS**
 
-### [Dormy](https://github.com/M1Vj/Dormy) - Solo Full Stack Developer
+### [UniDorm](https://github.com/M1Vj/Dormy)
 
-Tenant-aware dormitory operations app for VSU Molave Men's Hall.
+A solo-built dormitory operations application covering resident management, finance, clearance, events, evaluations and spreadsheet imports, with tenant-aware access and role-based workflows.
 
-- Maintained 140 merged PRs across role workflows, finance, clearance, events, evaluations, and XLSX workflows.
-- Built occupant rosters, room assignments, fines, payments, clearance workflows, event operations, evaluations, and exports.
+**Next.js · TypeScript · Supabase/PostgreSQL · shadcn/ui**
 
-**Stack:** Next.js, TypeScript, Supabase, PostgreSQL, shadcn/ui
+## Research & experience
 
-### Damba - Startup MVP
+- **Undergraduate NLP research:** I use Python to compare fixed AI-text detector scores on paired watermarked and unwatermarked Gemma responses, with reproducibility checks and careful interpretation. This work evaluates score behavior; it does not establish authorship.
+- **AI4GOV internship, June–July 2026:** Contributed to SangkAI with Pod B, a civic-feedback prototype for Philippine local-government contexts. My lane covered AI workflows, prompts, fallback behavior, safety checks and documentation, alongside implementation, testing and demo preparation.
+- **BS Computer Science, VSU:** Expected completion July 2027.
 
-Flutter/Firebase smart shopping list MVP pitched in Philippine Startup Challenge X.
+## How I work
 
-- Placed 5th out of 15 Eastern Visayas startup teams in DICT Region VIII regional pitching.
-- Built Android-first shopping workflow with budget tracking, offline support, multilingual UX, and Firebase-backed data.
+I use coding agents for planning and implementation, then check their output through source review, tests and browser verification. I care about useful products, traceable evidence and human review of AI suggestions.
 
-**Stack:** Flutter, Dart, Firebase, Firestore
+**Tools:** Python, TypeScript, React, Next.js, FastAPI, SQL, PostgreSQL, Supabase, SQLite, Git, Playwright and Vitest.
 
-## Technical Skills
-
-- **Frontend:** TypeScript, JavaScript, React, Next.js, Tailwind CSS, shadcn/ui, Radix UI
-- **Backend & Data:** Supabase, PostgreSQL, RLS, Firebase, SQL, server actions, REST APIs
-- **Platforms:** Vercel, PWA/offline caching, Android TWA, Supabase CLI
-- **Testing & Workflow:** Git/GitHub, Playwright, AI-assisted development workflows, technical writing
-- **Coursework:** Data Structures & Algorithms, Database Systems, Software Engineering, Web Systems, Operating Systems, Networks, Information Assurance & Security, Data Mining
-
-## Competitions & Research
-
-- Top 10 national finalist, Trend Micro University CTF 2025.
-- 5th place, Philippine Startup Challenge X Region VIII with Damba.
-- Thesis proposal defended May 19, 2026: AI-generated text detection using content/function word embeddings and persistent homology.
+I'm interested in early-career applied AI and software development opportunities.
