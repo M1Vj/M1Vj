@@ -86,7 +86,9 @@ My undergraduate research compares fixed passive AI-text detector scores on pair
 
 **[MathWiz Arena / centipede](https://github.com/M1Vj/centipede)** — Lead developer on a collaborative math competition platform. Problem banks, team competitions, scoring, answer review, disputes, leaderboards and exports, with role-based access and Supabase row-level security.
 
-**[UniDorm](https://github.com/M1Vj/Dormy)** — Solo-built dormitory operations software for resident management, finance, clearance, events, evaluations and spreadsheet imports, with tenant-aware access.
+**[Dormy](https://github.com/M1Vj/Dormy)** — My solo-built dormitory operations software for resident management, finance, clearance, events, evaluations and spreadsheet imports, with tenant-aware access.
+
+**UniDorm** — A separate group project.
 
 <details>
 <summary><b>Open my toolbox</b> — tools in the context of the work</summary>
