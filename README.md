@@ -26,7 +26,7 @@ Lead developer on a collaborative math competition platform for mathletes, coach
 
 **Next.js · TypeScript · Supabase/PostgreSQL · Tailwind CSS**
 
-### [UniDorm](https://github.com/M1Vj/Dormy)
+### [Dormy](https://github.com/M1Vj/Dormy)
 
 A solo-built dormitory operations application covering resident management, finance, clearance, events, evaluations and spreadsheet imports, with tenant-aware access and role-based workflows.
 
