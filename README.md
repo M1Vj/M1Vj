@@ -15,7 +15,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/stats-dark-mobile.svg">
   <source media="(max-width: 600px)" srcset="./assets/stats-light-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg">
-  <img src="./assets/stats-light.svg" width="1200" alt="Public GitHub stats: 19 repositories, 15 stars, 6 languages, 7 followers.">
+  <img src="./assets/stats-light.svg" width="1200" alt="Public GitHub stats: 19 repositories, 15 stars, 6 languages.">
 </picture>
 
 <sub>Public GitHub snapshot · 2026-10-25</sub>

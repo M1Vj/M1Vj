@@ -37,7 +37,7 @@ def refresh_stats():
     data={'login':user['login'],'retrieved_at':dt.datetime.now(dt.timezone.utc).date().isoformat(),
           'public_repositories':user['public_repos'],
           'stars_on_public_owned_repositories':sum(r['stargazers_count'] for r in repos),
-          'followers':user['followers'],'primary_languages_in_original_public_repositories':languages,
+          'primary_languages_in_original_public_repositories':languages,
           'sources':['https://api.github.com/users/M1Vj','https://api.github.com/users/M1Vj/repos?per_page=100&type=owner']}
     assert len(repos)==data['public_repositories'],'Incomplete public repository inventory'
     (ROOT/'sources-stats.json').write_text(json.dumps(data,indent=2)+'\n')
@@ -76,15 +76,14 @@ def hero(theme,mobile=False,still=False):
 def stats_svg(theme,stats,mobile=False):
     c=PALETTES[theme]
     values=[(stats['public_repositories'],'Public repos'),(stats['stars_on_public_owned_repositories'],'GitHub stars'),
-            (len(stats['primary_languages_in_original_public_repositories']),'Languages'),(stats['followers'],'Followers')]
+            (len(stats['primary_languages_in_original_public_repositories']),'Languages')]
     groups=[]
     for i,(value,label) in enumerate(values):
-        x=32+(i%2 if mobile else i)*300
-        y=(i//2)*112 if mobile else 0
-        if i%2 if mobile else i:groups.append(f'<path d="M{x-25} {y+24}v82" stroke="{c["line"]}"/>')
-        groups.append(f'<text x="{x}" y="{y+65}" font-family="{FONT}" font-size="44" font-weight="700" fill="{c["ink"]}">{value}</text><text x="{x}" y="{y+96}" font-family="{FONT}" font-size="20" fill="{c["muted"]}">{label}</text>')
+        x=32+i*(200 if mobile else 400)
+        if i:groups.append(f'<path d="M{x-25} 24v82" stroke="{c["line"]}"/>')
+        groups.append(f'<text x="{x}" y="65" font-family="{FONT}" font-size="44" font-weight="700" fill="{c["ink"]}">{value}</text><text x="{x}" y="96" font-family="{FONT}" font-size="20" fill="{c["muted"]}">{label}</text>')
     desc=', '.join(f'{v} {l.lower()}' for v,l in values)
-    w,h=(600,244) if mobile else (1200,132)
+    w,h=(600,132) if mobile else (1200,132)
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title"><title id="title">Public GitHub snapshot: {desc}. Updated {stats["retrieved_at"]}.</title><rect width="{w}" height="{h}" rx="12" fill="{c["bg"]}"/>{"".join(groups)}</svg>'
 
 BODY='''<details>
@@ -145,7 +144,7 @@ def picture(kind,still=False):
                  '  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg">']
         default='stats-light.svg'
         data=json.loads((ROOT/'sources-stats.json').read_text())
-        alt=f'Public GitHub stats: {data["public_repositories"]} repositories, {data["stars_on_public_owned_repositories"]} stars, {len(data["primary_languages_in_original_public_repositories"])} languages, {data["followers"]} followers.'
+        alt=f'Public GitHub stats: {data["public_repositories"]} repositories, {data["stars_on_public_owned_repositories"]} stars, {len(data["primary_languages_in_original_public_repositories"])} languages.'
     return '<picture>\n'+'\n'.join(sources)+f'\n  <img src="./assets/{default}" width="1200" alt="{html.escape(alt)}">\n</picture>\n\n'
 
 def main():
