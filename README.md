@@ -1,41 +1,61 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/studio-dark-mobile-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/studio-light-mobile-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/studio-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/studio-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/studio-dark-mobile.svg">
-  <source media="(max-width: 600px)" srcset="./assets/studio-light-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/studio-dark.svg">
-  <img src="./assets/studio-light.svg" width="1200" alt="Vj Mabansag — applied AI and full-stack development. An illustrated studio with a laptop, research notebook and campus map.">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/hero-light-mobile-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/hero-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <img src="./assets/hero-light.svg" width="1200" alt="Vj Mabansag — Applied AI and full-stack development. Embeddings, transformers and AI agents.">
 </picture>
 
-I build AI tools and the software around them. I'm **Vj**, a Computer Science student at **Visayas State University**, Philippines, graduating in **2027**. My focus is applied AI, with research into model behavior and an interest in how AI should be used.
+**Building useful AI tools.**
 
-**[Explore my work](#selected-work)** · **[Research notes](#what-im-investigating)** · **[Connect on LinkedIn](https://www.linkedin.com/in/m1vj/)**
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/stats-dark-mobile.svg">
+  <source media="(max-width: 600px)" srcset="./assets/stats-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg">
+  <img src="./assets/stats-light.svg" width="1200" alt="Public GitHub stats: 19 repositories, 15 stars, 6 languages, 7 followers.">
+</picture>
 
-## Selected work
+<sub>Public GitHub snapshot · 2026-10-25</sub>
 
-### [HydraLab ↗](https://github.com/M1Vj/HydraLab)
-**A local research workbench.** Reading, citations, writing and research agents in one place. I built it around a simple need: keep the source close to the claim. Python, TypeScript and a desktop interface; currently pre-release.
+<details>
+<summary><b>Projects</b> — AI tools &amp; full-stack builds</summary>
 
-### [VSU SmartMap ↗](https://github.com/M1Vj/VSU-SmartMap) · [Try the map](https://vsumap.vercel.app/)
-**Campus navigation with AI assistance.** An interactive map, searchable directory, offline access and Gemini-powered location chat. It began as a Software Engineering group project; I now maintain it solo.
+- **[HydraLab](https://github.com/M1Vj/HydraLab)** — My local research workbench for reading, citations, writing and research agents. Pre-release.
+- **[VSU SmartMap](https://github.com/M1Vj/VSU-SmartMap)** — Campus navigation with Gemini-powered location chat. Started as a group project; now maintained solo. [Open map](https://vsumap.vercel.app/).
+- **[MathWiz Arena / centipede](https://github.com/M1Vj/centipede)** — Lead developer on a collaborative math competition platform.
+- **[Dormy](https://github.com/M1Vj/Dormy)** — My solo-built dormitory operations app. **UniDorm is a separate group project.**
+- **[CodexSwap](https://github.com/M1Vj/CodexSwap)** — Native macOS tooling. **[VSUEE skill](https://github.com/M1Vj/vsuee-skill)** — E-learning automation for AI agents.
 
-### [MathWiz Arena / centipede ↗](https://github.com/M1Vj/centipede)
-**Math competitions, from registration to results.** Lead developer on a collaborative platform with problem banks, team contests, scoring, answer review and disputes. Next.js, TypeScript and Supabase.
+</details>
 
-**Also building:** [Dormy](https://github.com/M1Vj/Dormy), my solo dormitory operations app; [CodexSwap](https://github.com/M1Vj/CodexSwap), a native macOS tool; and [VSUEE agent tooling](https://github.com/M1Vj/vsuee-skill). **UniDorm is a separate group project.**
+<details>
+<summary><b>Research</b> — embeddings, transformers &amp; evaluation</summary>
 
-## What I'm investigating
+My undergraduate research compares passive AI-text detector scores on paired watermarked and unwatermarked Gemma responses, using Python analysis and reproducibility checks.
 
-How does watermarking change passive AI-text detector scores? My undergraduate research compares paired watermarked and unwatermarked Gemma responses, using Python analysis and reproducibility checks. A detector score needs careful interpretation.
+I focus on **embeddings, transformers, NLP, AI agents and evaluation**. Detector scores require careful interpretation.
 
-**Working interests:** embeddings, transformers, NLP, AI agents and evaluation. **Tools I use:** Python, TypeScript, React / Next.js, FastAPI, PostgreSQL / Supabase and Git.
+</details>
 
-## AI with human judgment
+<details>
+<summary><b>Toolbox</b> — Python, TypeScript &amp; beyond</summary>
+
+**Python · TypeScript · React / Next.js · FastAPI · PostgreSQL / Supabase · Git**
+
+</details>
+
+<details>
+<summary><b>About</b> — background &amp; opportunities</summary>
+
+I'm a **BS Computer Science student at Visayas State University**, Philippines, with expected completion in **July 2027**. My direction is **applied AI**, followed by **AI research** and **AI governance**.
 
 During my **AI4GOV internship**, I contributed with Pod B to **SangkAI**, a civic-feedback prototype. My work included AI workflows, prompts, fallback behavior, safety checks, testing and documentation. Staff review AI suggestions before decisions.
 
-I'm open to **early-career applied AI and software development opportunities**. [Let's talk →](https://www.linkedin.com/in/m1vj/)
+Open to **early-career applied AI and software development opportunities**. [Connect on LinkedIn](https://www.linkedin.com/in/m1vj/).
 
-<sub>[Text-only profile](./PROFILE-STILL.md) · Original artwork, drawn for this profile.</sub>
+</details>
+
+[LinkedIn](https://www.linkedin.com/in/m1vj/) · [Repositories](https://github.com/M1Vj?tab=repositories) · [Still version](./PROFILE-STILL.md)
