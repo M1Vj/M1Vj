@@ -8,6 +8,7 @@ from pathlib import Path
 import argparse
 import datetime as dt
 import html
+import hashlib
 import json
 import subprocess
 
@@ -144,6 +145,10 @@ def picture(kind,still=False):
                  '  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg">']
         default='stats-light.svg'
         data=json.loads((ROOT/'sources-stats.json').read_text())
+        payload=''.join(stats_svg(theme,data,mobile) for theme in PALETTES for mobile in [False,True])
+        version=hashlib.sha256(payload.encode()).hexdigest()[:12]
+        sources=[source.replace('.svg"',f'.svg?v={version}"') for source in sources]
+        default+=f'?v={version}'
         alt=f'Public GitHub stats: {data["public_repositories"]} repositories, {data["stars_on_public_owned_repositories"]} stars, {len(data["primary_languages_in_original_public_repositories"])} languages.'
     return '<picture>\n'+'\n'.join(sources)+f'\n  <img src="./assets/{default}" width="1200" alt="{html.escape(alt)}">\n</picture>\n\n'
 
