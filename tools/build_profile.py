@@ -87,6 +87,10 @@ def stats_svg(theme,stats,mobile=False):
     w,h=(600,132) if mobile else (1200,132)
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title"><title id="title">Public GitHub snapshot: {desc}. Updated {stats["retrieved_at"]}.</title><rect width="{w}" height="{h}" rx="12" fill="{c["bg"]}"/>{"".join(groups)}</svg>'
 
+def stats_asset_name(theme,data,mobile=False):
+    version=hashlib.sha256(stats_svg(theme,data,mobile).encode()).hexdigest()[:10]
+    return f'stats-{theme}'+('-mobile' if mobile else '')+f'-{version}.svg'
+
 BODY='''<details>
 <summary><b>Projects</b> — AI tools &amp; full-stack builds</summary>
 
@@ -140,15 +144,11 @@ def picture(kind,still=False):
         default='hero-light'+('-still' if still else '')+'.svg'
         alt='Vj Mabansag — Applied AI and full-stack development. Embeddings, transformers and AI agents.'
     else:
-        sources=['  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/stats-dark-mobile.svg">',
-                 '  <source media="(max-width: 600px)" srcset="./assets/stats-light-mobile.svg">',
-                 '  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg">']
-        default='stats-light.svg'
         data=json.loads((ROOT/'sources-stats.json').read_text())
-        payload=''.join(stats_svg(theme,data,mobile) for theme in PALETTES for mobile in [False,True])
-        version=hashlib.sha256(payload.encode()).hexdigest()[:12]
-        sources=[source.replace('.svg"',f'.svg?v={version}"') for source in sources]
-        default+=f'?v={version}'
+        sources=[f'  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/{stats_asset_name("dark",data,True)}">',
+                 f'  <source media="(max-width: 600px)" srcset="./assets/{stats_asset_name("light",data,True)}">',
+                 f'  <source media="(prefers-color-scheme: dark)" srcset="./assets/{stats_asset_name("dark",data)}">']
+        default=stats_asset_name('light',data)
         alt=f'Public GitHub stats: {data["public_repositories"]} repositories, {data["stars_on_public_owned_repositories"]} stars, {len(data["primary_languages_in_original_public_repositories"])} languages.'
     return '<picture>\n'+'\n'.join(sources)+f'\n  <img src="./assets/{default}" width="1200" alt="{html.escape(alt)}">\n</picture>\n\n'
 
@@ -166,7 +166,7 @@ def main():
                 name=f'hero-{theme}'+('-mobile' if mobile else '')+('-still' if still else '')+'.svg'
                 (ASSETS/name).write_text(hero(theme,mobile,still))
         for mobile in [False,True]:
-            (ASSETS/(f'stats-{theme}'+('-mobile' if mobile else '')+'.svg')).write_text(stats_svg(theme,data,mobile))
+            (ASSETS/stats_asset_name(theme,data,mobile)).write_text(stats_svg(theme,data,mobile))
     for still,name in [(False,'README.md'),(True,'PROFILE-STILL.md')]:
         intro='**Building useful AI tools.**\n\n'
         date=f'<sub>Public GitHub snapshot · {data["retrieved_at"]}</sub>\n\n'

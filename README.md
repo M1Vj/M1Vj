@@ -12,10 +12,10 @@
 **Building useful AI tools.**
 
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/stats-dark-mobile.svg?v=d077f7c1a7c6">
-  <source media="(max-width: 600px)" srcset="./assets/stats-light-mobile.svg?v=d077f7c1a7c6">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg?v=d077f7c1a7c6">
-  <img src="./assets/stats-light.svg?v=d077f7c1a7c6" width="1200" alt="Public GitHub stats: 19 repositories, 15 stars, 6 languages.">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/stats-dark-mobile-0f00354d9f.svg">
+  <source media="(max-width: 600px)" srcset="./assets/stats-light-mobile-9740bb8653.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark-a224e022ce.svg">
+  <img src="./assets/stats-light-111ec1d251.svg" width="1200" alt="Public GitHub stats: 19 repositories, 15 stars, 6 languages.">
 </picture>
 
 <sub>Public GitHub snapshot · 2026-10-25</sub>
